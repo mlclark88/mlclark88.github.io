@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Main page</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="main.css">
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" rel="stylesheet" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+</head>
+
+<!-- navigation bar. Stays on top, links fixed to the right-->
+
+<body>
+    <!-- code adapted from: bootstrap 4 tutorial -->
+    <!-- and https://stackoverflow.com/questions/40178386/bootstrap-4-navbar-items-on-right-side-->
+    <nav class="navbar navbar-toggleable-md">
+        <!-- keeps links on the right-->
+        <div class="container">
+            <!-- home button- navigates to main page with carousel-->
+            <a class="navbar-brand" href="index.html">Home</a>
+            <ul class="nav navbar-nav ml-auto">
+                <li class="nav-item">
+                    <!-- links to FAQ page-->
+                    <a class="nav-link" data-value="faq" href="faq.html">F.A.Q</a> </li>
+                <li class="nav-item">
+                    <!-- links to resources page-->
+                    <a class="nav-link " data-value="resources" href="resources.html">Resources</a> </li>
+                <li class="nav-item">
+                    <!-- links to report back page-->
+                    <a class="nav-link " data-value="reportBack" href="reportback.html">Report Back</a> </li>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <!-- Slideshow container -->
+    <!-- resources: https://codepen.io/billyhalim/pen/GZbZvO -->
+    <!-- https://www.w3schools.com/howto/howto_js_slideshow.asp -->
+    <!-- https://mdbootstrap.com/docs/jquery/javascript/carousel/ -->
+    <!-- https://stackoverflow.com/questions/30368434/keeping-a-bootstrap-carousel-as-a-static-background-with-text-on-top-->
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <div id="carousel-example-2" data-ride="carousel">
+                    <!--Slides-->
+                    <div class="carousel-inner" role="listbox">
+                        <div class="title">
+                            <div class="col-md-12 text-center">
+                                <h1>
+                                    Digital Data Collection</h1>
+                                <div class=""></div>
+                                <div class="carousel-item active">
+                                    <div class="view">
+                                        <img class="d-block w-100" src="/Users/mlclark88/Documents/OSU Computer science 2019-2021/CS 290/Project/Graph1.jpg" alt="First slide">
+                                    </div>
+                                </div>
+                                <div class="carousel-item">
+                                    <div class="view">
+                                        <img class="d-block w-100" src="/Users/mlclark88/Desktop/Screenshot 2019-11-25 at 19.36.44.png" alt="Second slide">
+                                    </div>
+                                </div>
+                                <div class="carousel-item">
+                                    <div class="view">
+                                        <img class="d-block w-100" src="https://mdbootstrap.com/img/Photos/Slides/img%20(9).jpg" alt="Third slide">
+                                    </div>
+                                </div>
+                            </div>
+                            <!--/.Slides-->
+                            <!--Controls-->
+                            <a class="carousel-control-prev" href="#carousel-example-2" role="button" data-slide="prev">
+                                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                <span class="sr-only">Previous</span>
+                            </a>
+                            <a class="carousel-control-next" href="#carousel-example-2" role="button" data-slide="next">
+                                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                <span class="sr-only">Next</span>
+                            </a>
+                            <!--/.Controls-->
+                        </div>
+                        <!--/. Wrapper-->
+                        <!-- connect main.js-->
+                        <script type="text/javascript" src='js/main.js'></script>
+
+</body>

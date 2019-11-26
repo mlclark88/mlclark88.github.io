@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>BFAW page</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="main.css">
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" rel="stylesheet" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+
+
+</head>
+
+<!-- navigation bar. Stays fixed on top when scrolling -->
+
+<body>
+    <!-- code adapted from: bootstrap 4 tutorial -->
+    <!-- and https://stackoverflow.com/questions/40178386/bootstrap-4-navbar-items-on-right-side-->
+    <nav class="navbar navbar-toggleable-md">
+        <!-- keeps links on the right-->
+        <div class="container">
+            <!-- home button- navigates to main page with carousel-->
+            <a class="navbar-brand" href="#">Home</a>
+            <ul class="nav navbar-nav ml-auto">
+                <li class="nav-item">
+                    <!-- links to FAQ page-->
+                    <a class="nav-link" data-value="faq" href="#">F.A.Q</a> </li>
+                <li class="nav-item">
+                    <!-- links to resources page-->
+                    <a class="nav-link " data-value="resources" href="#">Resources</a> </li>
+                <li class="nav-item">
+                    <!-- links to report back page-->
+                    <a class="nav-link " data-value="reportBack" href="#">Report Back</a> </li>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <!-- https://www.w3schools.com/bootstrap/tryit.asp?filename=trybs_navbar_dropdown&stacked=h-->
+    <div class="container-fluid">
+        <div class="row content">
+            <div class="col-sm-3 sidenav">
+                <h3>Frequently Asked Questions</h3>
+            </div>
+            <div class="col-sm-9">
+                <div class="container">
+                    <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#">Who should I contact if I have more questions? <span class="caret"></span></a>
+                        <ul class="dropdown-menu">
+                            <span class="dropdown-item-text"> Melissa! Stop on by in room 112 for more information.</span>
+                        </ul>
+                        <p></p>
+                        <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#">My tablet isn't working- what should I do? <span class="caret"></span></a>
+                            <ul class="dropdown-menu">
+                                <span class="dropdown-item-text"> A few things: Plug it in and make sure its charged.</span>
+                                <span class="dropdown-item-text"> Then, ensure all updates are installed.</span>
+                                <span class="dropdown-item-text"> If there are no new updates, email IT. </span>
+                            </ul>
+                            <p></p>
+                            <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#">Can I input data if the tablet dies during my session? <span class="caret"></span></a>
+                                <ul class="dropdown-menu">
+                                    <span class="dropdown-item-text"> Absolutely. Please see tutorial for data input under Resources tab. </span>
+                                </ul>
+                                <p></p>
+                                <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#"> Can I view graphs in session? <span class="caret"></span></a>
+                                    <ul class="dropdown-menu">
+                                        <span class="dropdown-item-text"> Go to trial sheet-> name of program.</span>
+                                    </ul>

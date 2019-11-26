@@ -1,0 +1,228 @@
+/* adapted from previous assignemtn, and Bootstrap 4 website tutorials */
+
+.navbar {
+    background: rgb(153, 211, 245);
+}
+
+
+/*fonts*/
+
+html,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+a {
+    font-family: 'chalkduster';
+}
+
+.nav-link,
+.navbar-brand {
+    color: #f4f4f4;
+    cursor: pointer;
+}
+
+.nav-link {
+    margin-right: 1em !important;
+}
+
+
+/* changes the color of the link when you hover over to click*/
+
+.nav-link:hover {
+    cursor: pointer;
+}
+
+
+/* required to flexbox through bootstrap to justify on the right*/
+
+.navbar-collapse {
+    justify-content: flex-end;
+}
+
+.navbar-toggler {
+    background: #fff !important;
+}
+
+.bg-primary {
+    background-color: #007bff!important
+}
+
+
+/* carousel */
+
+* {
+    box-sizing: border-box
+}
+
+
+/* Slideshow container */
+
+.slideshow-container {
+    max-width: 1000px;
+    position: relative;
+    margin: auto;
+}
+
+
+/* Hide the images by default */
+
+.mySlides {
+    display: none;
+}
+
+
+/* Next & previous buttons */
+
+.prev,
+.next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    margin-top: -22px;
+    padding: 16px;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+}
+
+
+/* Position the "next button" to the right */
+
+.next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+}
+
+
+/* On hover, add a black background color with a little bit see-through */
+
+.prev:hover,
+.next:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+
+/* Caption text */
+
+.text {
+    color: #f2f2f2;
+    font-size: 15px;
+    padding: 8px 12px;
+    position: absolute;
+    bottom: 8px;
+    width: 100%;
+    text-align: center;
+}
+
+
+/* Number text (1/3 etc) */
+
+.numbertext {
+    color: #f2f2f2;
+    font-size: 12px;
+    padding: 8px 12px;
+    position: absolute;
+    top: 0;
+}
+
+
+/* The dots/bullets/indicators */
+
+.dot {
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+}
+
+.active,
+.dot:hover {
+    background-color: #717171;
+}
+
+.description {
+    position: absolute;
+    top: 30%;
+    margin: auto;
+    padding: 2em;
+}
+
+.description p {
+    color: #666;
+    font-size: 20px;
+    width: 50%;
+    line-height: 1.5;
+}
+
+.title {
+    font-family: Bradley hand;
+    font-weight: 600;
+    font-size: 60px;
+    color: #20136b;
+    text-align: center;
+}
+
+
+/*faq*/
+
+
+/* Set height of the grid so .sidenav can be 100% (adjust if needed) */
+
+.row.content {
+    height: 1500px
+}
+
+
+/* Set gray background color and 100% height */
+
+.sidenav {
+    background-color: #f1f1f1;
+    height: 100%;
+}
+
+
+/* resources */
+
+body {
+    position: relative;
+}
+
+.affix {
+    top: 20px;
+    z-index: 9999 !important;
+}
+
+div.col-md-12 mb-8 div {
+    height: 400px;
+    font-size: 28px;
+}
+
+
+/* scrollbar */
+
+
+/* adapted from Bootstrap 4 tutorial*/
+
+.scrollbar-cyan::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.1);
+    background-color: rgb(2, 78, 141);
+    border-radius: 10px;
+}
+
+.example-1 {
+    margin-top: 40px;
+    position: relative;
+    overflow-y: scroll;
+    height: 400px;
+}
